@@ -320,7 +320,7 @@ section h2 {
 #hot span {
 	position: absolute;
 	padding: 5px;
-	background-color: #FFE400;
+	background-color: #FFD800;
 	color: #333;
 	font-weight: 700;
 	border-radius: 4px;
@@ -666,4 +666,123 @@ section h2 {
     object-fit: cover;
     border: 2px solid #ddd;
     border-radius: 50%;
+}
+
+/* about slide style */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url('img/slider/1.jpeg') no-repeat
+    center/cover;
+}
+.slide:nth-child(2) {
+  background: url('img/slider/2.jpg') no-repeat
+    center/cover;
+}
+.slide:nth-child(3) {
+  background: url('img/slider/3.jpeg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('img/slider/4.jpeg') no-repeat
+    center/cover;
+}
+.slide:nth-child(5) {
+  background: url('img/slider/5.jpg') no-repeat
+    center top/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('img/slider/6.jpeg') no-repeat
+    center center/cover;
+}
+
+/*about-us   */
+#about-us h4 {
+  font-size: 32px;
+  padding-top: 0;
+  margin-top: 0;
 }
