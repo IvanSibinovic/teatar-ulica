@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrej Krnjajić</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="../icon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+<body>
+	<div class="overlaid"></div>
+  	<nav>
+	    <div id="shrinked" class="toggle"><a href='#'><img src='../logo1.png' style="height: 58px;"></a><i class="fas fa-bars menu" aria-hidden="true"></i></div>
+	    <div id="logoWide">
+	    <a href="#"><div id="logo-img"><img src="../logo1.png" style="height: 58px;"></div><span id="logo-txt">Teatar Ulica</span></a></div>
+
+	    <ul>
+        <li class="tags"><a href="../index.html">POČETNA</a></li>
+	      <li class="tags"><a href="../o-nama.html"><nobr>O NAMA</nobr></a></li>
+	      <li class="tags"><a href="#contact">KONTAKT</a></li>
+	    </ul>
+  	</nav>
+
+  <section class="bio section-b">
+    <div class="container">
+      <div class="bio-head">
+        <img class="memb-pic" src="../img/members2/boy.jpg">
+        <div class="bio-text">
+          <h1>Andrej Krnjajić</h1>
+          <h3><span>Datum rođenja:</span> 15.08.1997.</h3>
+          <h3><span>Mesto rođenja:</span> Novi Sad</h3>
+          <h3>Pozicija u Teatru: Glumac.</h3>
+          <h3>O glumi: Gluma je sredstvo za podizanje svesti ljudi.</h3>
+          <h3>Volim: Muziku, timski rad.</h3>
+          <h3>Ne volim: Neorganizovanost.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-novak">
+    <div class="bio-content container">
+      <div class="roles">
+        <h3><i class="fas fa-tags"></i> ULOGE:</h3>
+          <div class="text-count">
+            <h5>Uloge: Liki (,,Čekajući Godoa”)</h5>
+          </div>
+        </div>
+        <div class="rew-moto">
+          <div class="moto">
+            <h3>Životni moto:</h3>
+            <blockquote class="blockquote"><p>Ako igraš, igraj da bi pobedio.</p></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+  	<h2>Kontakt</h2>
+    <div class="container">
+    	<div class="contact-grid">
+    		<div class="contact-col">
+    			<h4>slobodno nas kontaktirajte</h4>
+    			<p><i class="fas fa-phone"></i> +381 64 456 321</p>
+    			<p><i class="fas fa-envelope"></i> teatar-ulica@gmail.com</p>
+    			<p>još neke informacije</p>
+    			<p>još neke informacije</p>
+    		</div>
+    		<div class="contact-col2">
+    			<h4>prijatelji Teatra Ulica</h4>
+    			<p>link do negde</p>
+    			<p>link do negde</p>
+          <p>link do negde</p>
+          <p>link do negde</p>
+    		</div>
+    		<div class="contact-col3">
+    			<h4>još neke informacije</h4>
+    			<p>još neke informacije</p>
+    			<p>još neke informacije</p>
+    			<p>Pratite nas i na društvenim mrežama</p>
+    			<div class="icon-holder">
+		        	<a href="https://www.facebook.com/teatarulica/"><i class="fab fa-facebook"></i></a>
+		        	<a href="https://www.instagram.com/teatar_ulica/"><i class="fab fa-instagram"></i></a>
+		        	<a href="#"><i class="fab fa-twitter"></i></i></a>
+		        	<a href="#"><i class="fab fa-linkedin"></i></a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div id="bottom-line">
+    	<p>Website Design by <a href="https://www.peopleperhour.com/freelancer/development-it/ivan-sibiinovic-web-designer-front-end-developer-yjyqnqz">Ivan Sibinovic</a>. All Rights Reserved. Copyright 2019.</p>
+    </div>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $('li.tags').on('click', function (e) {
+      window.location.href= $(this).children('a').attr("href");
+      return false;
+    });
+
+    $(document).ready(function(){
+        $(".menu, .overlaid, .tags").click(function(){
+          $('ul').toggleClass('active1');
+          $('nav').toggleClass('active2');
+      //  $('.overlaid').toggleClass('overlay-appear');
+        })
+    })
+    // Logo and Navbar change on scroll:	
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > ($('nav').height())) {
+				$('nav').addClass('scrolled-nav');
+			} else {
+				$('nav').removeClass('scrolled-nav');
+			}
+		});
+  </script>
+</body>
+</html>
