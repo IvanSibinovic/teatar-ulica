@@ -391,7 +391,7 @@ section h2 {
 .card {
   display: inline-block;
   height: 400px;
-  width: 320px;
+  width: 310px;
   background-color: #fff;
   border: 3px solid #333;
   border-radius: 3px;
@@ -551,7 +551,7 @@ a .card {
   padding: 0 5%;
   }
   .big-card, .small-card {
-    width: 320px;
+    width: 310px;
   }
   .under-txt {
     display: none;
@@ -606,111 +606,6 @@ a .card {
     margin-top: 1rem;
     width: 100%;
     height: 300px;
-  }
-}
-/*testemonials */
-#testemonials {
-  margin: 0;
-  padding: 0;
-  border-top: 15px solid #333;
-  border-bottom: 15px solid #333
-}
-#testemonials h2 {
-}
-#testemonials .slide-container {
-  position: relative;
-  margin: 0;
-  line-height: 1.6;
-  background: url(img/testemonials-bkg5.jpeg) no-repeat center center fixed;
-  padding: 10px 150px;
-}
-#testemonials .slider-tstmn {
-  position: relative;
-  overflow: hidden;
-  min-height: 14rem;
-}
-
-#testemonials .slide-tstmn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-
-#testemonials .slide-tstmn.current-tstmn {
-  opacity: 1;
-}
-
-#testemonials .slide-tstmn .content-tstmn {
-  position: absolute;
-  bottom: 1rem;
-  left: -100%;
-  opacity: 0;
-  width: 100%;
-  color: #000;
-}
-
-#testemonials .slide-tstmn .content-tstmn h2 {
-  font-size: default;
-  padding: default;
-  margin: default;
-  border: none;
-  margin-bottom: 10px;
-  text-align: right;
-}
-#testemonials p:before {
-  position: absolute;
-  bottom: -20px;
-  left: 60px;
-  font-size: 50px;
-  color: rgba(0,0,0, 0.6);
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f10d";
-}
-#testemonials .slide-tstmn.current-tstmn .content-tstmn {
-  opacity: 1;
-  transform: translateX(100%);
-  transition: all 0.7s ease-in-out 0.3s;
-}
-
-#testemonials .buttons-tstmn button#next-tstmn {
-  position: absolute;
-  top: 40%;
-  right: 15px;
-}
-
-#testemonials .buttons-tstmn button#prev-tstmn {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-}
-
-#testemonials .buttons-tstmn button {
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  padding: 13px 15px;
-  outline: none;
-}
-
-#testemonials .buttons-tstmn button:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-@media (max-width: 500px) {
-  #testemonials .slide-tstmn .content-tstmn {
-    padding: 10px 70px;
-  }
-  #testemonials .slider-tstmn {
-    min-height: 22rem;
-  }
-}
-@media (max-width: 350px) {
-  #testemonials .slider-tstmn {
-    min-height: 28rem;
   }
 }
 /*  ----testemonials end---  */
@@ -1242,4 +1137,119 @@ a .card {
 }
 .iconcredit {
   font-size: 0.7em;
+}
+
+/*  testemnials  */  
+.sldwrp {
+  position: relative;
+  border-bottom: 5px solid #333;
+  border-top: 5px solid #333;
+}
+.sldr {
+  min-height: 25rem;
+  position: relative;
+  margin: 0;
+  line-height: 1.6;
+  background: url(img/testemonials-bkg5.jpeg) no-repeat center center fixed;
+  padding: 10px 150px;
+}
+
+.sld {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.sld.curr {
+  opacity: 1;
+}
+
+.sld .cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.sld .cont h2 {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.sld.curr .cont {
+  opacity: 1;
+  transition: all 0.7s ease-in-out 0.3s;
+}
+.cont p:after {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  font-size: 50px;
+  color: rgba(0,0,0, 0.6);
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f10d";
+}
+.butt button#nex {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.butt button#pre {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.butt button {
+  background-color: transparent;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  outline: none;
+}
+
+.butt button:hover {
+  background-color: #fff;
+  color: #333;
+}
+@media (max-width: 850px) {
+  .cont p:after {
+  bottom: 0;
+  left: 60px;
+  font-size: 40px;
+  }
+  .sldr {
+  min-height: 30rem;
+  }
+  .sld .cont {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .butt button {
+    font-size: 1em;
+    padding: 5px;
+    color: #333;
+  }
+  .sld .cont {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .butt button#nex {
+  right: 5px;
+  }
+
+  .butt button#pre {
+    left: 5px;
+  }
 }
