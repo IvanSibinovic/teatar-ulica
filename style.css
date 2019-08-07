@@ -136,7 +136,7 @@ nav ul li.return a {
 ul {
 	position: absolute;
     right: 0;
-    background: #34b3a0;
+    background: #333;
     padding: 0;
     width: 65%;
     transform-origin: right;
@@ -248,8 +248,7 @@ ul {
 }
 
 .header-content h1{
-  font-size:50px;
-  margin-bottom:0;
+  font-size:60px;
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -934,9 +933,6 @@ a .card {
   -webkit-clip-path: polygon(50% 0, 50% 50%,100% 50% ,100% 0%);
   clip-path: polygon(50% 0, 50% 50%,100% 50% ,100% 0%);
 }
-.memb-pic::before {
-
-}
 .bio-text {
   width: 50%;
   vertical-align: top;
@@ -948,6 +944,12 @@ a .card {
   }
   .bio-text {
   width: 90%;
+  }
+  .memb-pic-holder::before, .memb-pic-holder::after {
+  top: -12px;
+  bottom: -12px;
+  left: -12px;
+  right: -12px;
   }
   .bio-content .rew-moto {
     width: 320px;
@@ -1030,7 +1032,24 @@ a .card {
   background-color: #225470;
   color: #ddd;
   min-height: 50vh;
-} 
+}
+#about-novak .card-holder {
+  width: 100
+  background-color: #ddd;
+}
+.pics {
+  padding: 10px 0;
+  background-color: #ddd;
+}
+.pics .memb-pic {
+  border: 2px solid #333;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .pics .memb-pic {
+  width: 80%;
+  }
+}
 /* blog */
 .section-blog {
   min-height: 30rem;
@@ -1086,7 +1105,6 @@ a .card {
   display: flex;
   font-family: 'Libre Caslon Text', serif;
 }
-
 .article {
   display: inline-block;
   margin: 2%;
@@ -1113,14 +1131,6 @@ a .card {
   width: 35%;
   }
 }
-@media (max-width: 768px) {
-.art-side-img {
-  display: none;
-}
-.article {
-  width: 100%;
-  }
-}
 .section-rep {
   background-color: #225470;
   color: #ddd;
@@ -1138,7 +1148,19 @@ a .card {
 .iconcredit {
   font-size: 0.7em;
 }
-
+@media (max-width: 768px) {
+  .art-side-img {
+  display: none;
+  }
+  .article {
+  width: 100%;
+  }
+  .topimg {
+  height: 60vh;
+  background: url(img/repertoire/dtk-small.jpg) no-repeat center top;
+  background-size: cover;
+  }
+}
 /*  testemnials  */  
 .sldwrp {
   position: relative;
@@ -1153,7 +1175,6 @@ a .card {
   background: url(img/testemonials-bkg5.jpeg) no-repeat center center fixed;
   padding: 10px 150px;
 }
-
 .sld {
   position: absolute;
   top: 0;
@@ -1163,11 +1184,9 @@ a .card {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
-
 .sld.curr {
   opacity: 1;
 }
-
 .sld .cont {
   position: absolute;
   top: 50%;
@@ -1241,7 +1260,7 @@ a .card {
     color: #333;
   }
   .sld .cont {
-    width: 80%;
+    width: 70%;
   }
 }
 @media (max-width: 500px) {
