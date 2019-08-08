@@ -122,17 +122,17 @@ nav ul li.return a {
   margin-left: 5%;
 }
 
-@media (max-width:768px) {
+@media (max-width:1050px) {
   .toggle {
     display: block;
     visibility: visible;
     opacity: 1;
     animation: fade 1s;
-}
+  }
 
-#logoWide {
+  #logoWide {
 	display: none;
-}
+  }
 ul {
 	position: absolute;
     right: 0;
@@ -251,7 +251,9 @@ ul {
   font-size:60px;
   font-family: 'Kaushan Script', cursive;
 }
-
+.header-content h4 {
+  font-family: 'Merriweather', serif;
+}
 .header-content h3{
   font-size:1.5rem;
   display:block;
@@ -544,11 +546,6 @@ a .card {
       background: url('img/gallery/gallery-img6.JPG') center bottom;
     }
 @media(max-width:960px){
-  .img-holder, .txt-holder {
-  display: block;
-  width: 100%;
-  padding: 0 5%;
-  }
   .big-card, .small-card {
     width: 310px;
   }
@@ -836,7 +833,12 @@ a .card {
   padding-top: 0;
   margin-top: 0;
 }
-@media (max-width: 1180px) {
+@media (max-width: 1158px) {
+  .img-holder, .txt-holder {
+  display: block;
+  width: 100%;
+  padding: 0 5%;
+  }
   #about-us .img-holder {
   order: 1;
   }
