@@ -101,7 +101,7 @@
       </div>
     </div>
     <div class="about-wrap container">
-      <div class="img-holder"><img src="22.jpeg" style="width: 100%"></div>
+      <div class="img-holder"><img src="img/stage.jpeg" style="width: 100%"></div>
       <div class="txt-holder">
         <h4>Život iz našeg ugla</h4>
         <p>Teatar Ulica je nastala iz želje ambicioznih i mladih ljudi da organizovanjem predstava i ostalih umetničkih aktivnosti doprinese razvoju kulture u Srbiji. Zvanični upis teatra u državni registar je izvršen 10. septembra 2018 godine i od tada se broj članova sa 10 popeo na 22. Jako smo ponosni sto nijedan od 22 člana "ne sedi", tj. svako od njih ima svoje zaduženje i aktivan je ako ne glumački onda izvan scene svakako. Iako relativno mlad teatar, sa sistemom koji smo napravili, za sada smo osvojili 5 nagrada sa 2 festivala od kojih je jedna "pobednik festivala nagrada za najbolju predstavu".</p>
@@ -278,18 +278,25 @@
     <div class="container">
       <h2>Naše misli</h2>
         <div class="card-holder">
-          <a href="creative-blog/sofija-pesma.html"><div class="small-card blg-crd">
-            <img class="small-card-img" src="img/creative/111.jpg">
-            <div class="small-card-txt">
-              <h4>Budi mi prijatelj pre svega</h4>
-              <h5>- Sofija Đurić</h5>
-            </div>
-          </div></a>
           <a href="creative-blog/katarina-clanak.html"><div class="small-card blg-crd">
             <img class="small-card-img" src="img/creative/333.jpg">
             <div class="small-card-txt">
               <h4>Zašto volim glumu</h4>
               <h5>- Katarina Jovanović</h5>
+            </div>
+          </div></a>
+          <a href="creative-blog/marijana-clanak.html"><div class="small-card blg-crd">
+            <img class="small-card-img" src="img/creative/222.jpg">
+            <div class="small-card-txt">
+              <h4>Širenje duše</h4>
+              <h5>- Marijana Mandić</h5>
+            </div>
+          </div></a>
+          <a href="creative-blog/sofija-pesma.html"><div class="small-card blg-crd">
+            <img class="small-card-img" src="img/creative/111.jpg">
+            <div class="small-card-txt">
+              <h4>Budi mi prijatelj pre svega</h4>
+              <h5>- Sofija Đurić</h5>
             </div>
           </div></a>
         </div>
@@ -341,11 +348,12 @@
       return false;
     });
   
-    $(document).ready(function(){                //navbar toggle classes
-      $(".menu").click(function(){             //when shrinked
-        $('ul').toggleClass('active1');
-        $('nav').toggleClass('active2');
-      })
+    $(document).ready(function(){
+        $(".menu, .overlaid, .tags").click(function(){
+          $('ul').toggleClass('active1');
+          $('nav').toggleClass('active2');
+      //  $('.overlaid').toggleClass('overlay-appear');
+        })
     })
     
     // Logo and Navbar change on scroll:	

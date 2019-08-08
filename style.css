@@ -1105,6 +1105,11 @@ a .card {
   display: flex;
   font-family: 'Libre Caslon Text', serif;
 }
+@media (min-width: 850px) {
+  .article h3, .article {
+    font-size: 1.25em;
+  }
+}
 .article {
   display: inline-block;
   margin: 2%;
@@ -1116,6 +1121,7 @@ a .card {
 }
 .article h3 {
   font-size: 32px;
+  margin-top: 0;
 }
 .article span {
   margin-right: 10px;
