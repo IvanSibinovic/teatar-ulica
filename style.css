@@ -27,8 +27,9 @@ body{
 nav {
   position: absolute;
   top: 0;
-  padding-top: 10px;
-  height: 58px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 50px;
   width: 100%;
   z-index: 1500;
   position: fixed;
@@ -53,7 +54,7 @@ nav ul {
   display: inline-block;
   vertical-align: middle;
   padding-left: 5px;
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
 }
 #logoWide #logo-img {
@@ -62,7 +63,7 @@ nav ul {
 #logoWide #logo-txt {
   display: inline-block;
   position: relative;
-  top: -20px;
+  top: -17px;
   left: 10px;
 }
 ul {
@@ -76,7 +77,7 @@ ul {
 ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
   cursor: pointer;
   -webkit-transition: background-color 400ms linear;
   -moz-transition: background-color 400ms linear;
@@ -98,6 +99,9 @@ ul li a:hover {
 nav ul li.return a {
   color: #FBA92E; 
 }
+#shrinked {
+  height: 55px;
+}
 .toggle {
   width: 100%;
   height: 100%;
@@ -113,7 +117,7 @@ nav ul li.return a {
 }
 .toggle i {
   float:right;
-  padding: 17px 12px;
+  padding: 13px 12px;
   cursor: pointer;
   color: #fff;
 }
@@ -134,7 +138,7 @@ nav ul li.return a {
 	display: none;
   }
 ul {
-	position: absolute;
+  position: absolute;
     right: 0;
     background: #333;
     padding: 0;
@@ -147,7 +151,6 @@ ul {
   ul li {
     display: block;
     text-align: center;
-
     border: 1px solid #fff;
     z-index: 25;
   } 
@@ -693,7 +696,7 @@ a .card {
     width: 100%;
     height: 45%;
     object-fit: cover;
-    border: 2px solid #ddd;
+    border: 2px solid #333;
     border-radius: 50%;
 }
 /*
@@ -857,11 +860,16 @@ a .card {
 #members a {
   text-decoration: none;
 }
+#members .small-card-txt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 #members .small-card-txt h3{
   color: #fff;
   font-size: 1.5em;
   margin: 0;
-  border-top: 6px solid #ddd;
+  border-top: 3px solid #ddd;
 }
 .member-card:hover h3 {
   text-decoration: underline;
@@ -873,7 +881,7 @@ a .card {
   line-height: 1;
   font-size: 11px;
   padding-bottom: 3px;
-  border-bottom: 6px solid #ddd;
+  border-bottom: 3px solid #ddd;
 }
 .member-card  {
   height: 80px;
@@ -898,7 +906,7 @@ a .card {
   align-items: flex-start;
 }
 .bio h1 {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0;
   font-size: 2.5em;
   letter-spacing: 3px;
@@ -1119,25 +1127,35 @@ a .card {
   background-color: #fff;
   color: #000;
   text-align: left;
-  width: 50%;
+  width: 60%;
 }
 .article h3 {
   font-size: 32px;
   margin-top: 0;
 }
-.article span {
+.article .auth {
   margin-right: 10px;
+}
+.ending {
+  text-align: left;
+  margin: 2% 0 0 3%;
+  padding-bottom: 2%;
+}
+.ending a {
+  color: #fff;
 }
 .art-side-img {
   display: inline-block;
   margin-top: 2%;
   margin-bottom: 2%;
-  width: 20%;
+  width: 25%;
+  line-height: 0;
 }
-@media (max-width: 975px) {
-.article {
-  width: 35%;
-  }
+.art-side-img img {
+  margin-top: 0.75rem;
+}
+.art-side-img img:nth-of-type(1) {
+  margin-top: 0;
 }
 .section-rep {
   background-color: #225470;
@@ -1157,11 +1175,15 @@ a .card {
   font-size: 0.7em;
 }
 @media (max-width: 768px) {
-  .art-side-img {
-  display: none;
+  .article .auth {
+    display: block;
+    line-height: 30px;
   }
-  .article {
-  width: 100%;
+  .art-side-img {
+    width: 24%;
+  }
+  .artcl {
+    padding: 0;
   }
   .topimg {
   height: 60vh;
@@ -1211,31 +1233,26 @@ a .card {
   margin-bottom: 10px;
   text-align: right;
 }
-
 .sld.curr .cont {
   opacity: 1;
   transition: all 0.7s ease-in-out 0.3s;
 }
+.cont p:before {
+  content: "„";
+}
 .cont p:after {
-  position: absolute;
-  bottom: 0;
-  left: 80px;
-  font-size: 50px;
-  color: rgba(0,0,0, 0.6);
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f10d";
+  content: "”";
 }
 .butt button#nex {
   position: absolute;
   top: 40%;
   right: 15px;
 }
-
 .butt button#pre {
   position: absolute;
   top: 40%;
   left: 15px;
 }
-
 .butt button {
   background-color: transparent;
   font-size: 2em;
@@ -1250,11 +1267,6 @@ a .card {
   color: #333;
 }
 @media (max-width: 850px) {
-  .cont p:after {
-  bottom: 0;
-  left: 60px;
-  font-size: 40px;
-  }
   .sldr {
   min-height: 30rem;
   }
@@ -1275,7 +1287,6 @@ a .card {
   .butt button#nex {
   right: 5px;
   }
-
   .butt button#pre {
     left: 5px;
   }
