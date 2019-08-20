@@ -31,19 +31,19 @@
       <div class="article">
         <h3>Zašto volim glumu</h3>
         <div>
-          <span><i class="fas fa-feather"></i> Katarina Jovanović</span>
-          <span><i class="fas fa-calendar-day"></i> 16.04.2019.</span>
+          <span class="auth"><i class="fas fa-feather"></i> Katarina Jovanović</span>
+          <span class="auth"><i class="fas fa-calendar-day"></i> 16.04.2019.</span>
         </div>
         <div>
           <p>Oduvek me je zanimalo šta se desavalo u životima drugih ljudi. Toliko lica prođe pored mene, svaki dan. Toliko različitih priča, i svaka je verovatno podjednako zanimljiva. Gde se to naši putevi ukrštaju, ili će se ukrstiti, a da toga nismo ni svesni. Volela bih kada bi svako mogao bez laži i prevare da stane i da samo ispriča svoju priču. kakva god da je.</p>
         </div>
       </div>
-      <div class="art-side-img"><img src="../img/creative/33.jpg" style="width: 20rem;"></div>
+      <div class="art-side-img"><img src="../img/creative/33.jpg" style="width: 100%;"></div>
     </div>
   </section>
 
 
-  <section id="contact">
+  <section id="contact" class="section">
   	<h2>Kontakt</h2>
     <div class="container">
     	<div class="contact-grid">
@@ -80,28 +80,7 @@
     </div>
   </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script>
-    $('li.tags').on('click', function (e) {
-      window.location.href= $(this).children('a').attr("href");
-      return false;
-    });
-
-    $(document).ready(function(){
-        $(".menu, .overlaid, .tags").click(function(){
-          $('ul').toggleClass('active1');
-          $('nav').toggleClass('active2');
-      //  $('.overlaid').toggleClass('overlay-appear');
-        })
-    })
-    // Logo and Navbar change on scroll:	
-		$(window).scroll(function () {
-			if ($(document).scrollTop() > ($('nav').height())) {
-				$('nav').addClass('scrolled-nav');
-			} else {
-				$('nav').removeClass('scrolled-nav');
-			}
-		});
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../js/general.js"></script>
 </body>
 </html>

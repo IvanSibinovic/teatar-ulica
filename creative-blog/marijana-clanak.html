@@ -31,20 +31,20 @@
       <div class="article">
         <h3>Širenje duše</h3>
         <div>
-          <span><i class="fas fa-feather"></i>  Marijana Mandić</span>
-          <span><i class="fas fa-calendar-day"></i> 02.03.2019.</span>
+          <span class="auth"><i class="fas fa-feather"></i>  Marijana Mandić</span>
+          <span class="auth"><i class="fas fa-calendar-day"></i> 02.03.2019.</span>
         </div>
         <div>
           <p>Pod glumom podrazumevam mnogliku domišljatost slobode i uobrazilje. Podrazumevam uvežbavanje duhovne čestitosti tako da budemo mudriji od čula vida. Gluma je, u mom viđenju stvari, širokoumlje, čulnost i velikodušnost koje se nesputano razvijaju van okvira svega lažnog.</p>
           <p>Gluma nije i nikad ne liči na laž. To je istinoljublje samo. Življenje istinitog. Volja za prevazilaženjem barikada unutar onoga što nazivamo sobom zarad iznalaženja rešenja za boljitak čitavog čovečanstva. Upućivanje na mogućnost onoga što se naziva nemogućim. Razgibavanje vijuga. Otvaranje neotvorenih fioka mozga. Širenje duše.</p>
         </div>
       </div>
-      <div class="art-side-img"><img src="../img/creative/22.jpg" style="width: 20rem;"></div>
+      <div class="art-side-img"><img src="../img/creative/22.jpg" style="width: 100%;"></div>
     </div>
   </section>
 
 
-  <section id="contact">
+  <section id="contact" class="section">
   	<h2>Kontakt</h2>
     <div class="container">
     	<div class="contact-grid">
@@ -81,28 +81,7 @@
     </div>
   </section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script>
-    $('li.tags').on('click', function (e) {
-      window.location.href= $(this).children('a').attr("href");
-      return false;
-    });
-
-    $(document).ready(function(){
-        $(".menu, .overlaid, .tags").click(function(){
-          $('ul').toggleClass('active1');
-          $('nav').toggleClass('active2');
-      //  $('.overlaid').toggleClass('overlay-appear');
-        })
-    })
-    // Logo and Navbar change on scroll:	
-		$(window).scroll(function () {
-			if ($(document).scrollTop() > ($('nav').height())) {
-				$('nav').addClass('scrolled-nav');
-			} else {
-				$('nav').removeClass('scrolled-nav');
-			}
-		});
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="../js/general.js"></script>
 </body>
 </html>

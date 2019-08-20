@@ -9,8 +9,6 @@
 <link rel="stylesheet" type="text/css" href="../style.css">
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <!-- animations on scroll -->
-  <link rel="stylesheet" type="text/css" href="../animations/aos.css">
 <body>
 	<div class="overlaid"></div>
   	<nav>
@@ -75,7 +73,7 @@
       <img class="memb-pic" src="../img/members/jelena/4.jpg">
     </div>
   </section>
-  <section id="contact">
+  <section id="contact" class="section">
   	<h2>Kontakt</h2>
     <div class="container">
     	<div class="contact-grid">
@@ -113,31 +111,6 @@
   </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="../animations/aos.js"></script>
-  <script>
-    AOS.init({duration: 1500,});
-  </script>
-  <script>
-    $('li.tags').on('click', function (e) {
-      window.location.href= $(this).children('a').attr("href");
-      return false;
-    });
-
-    $(document).ready(function(){
-        $(".menu, .overlaid, .tags").click(function(){
-          $('ul').toggleClass('active1');
-          $('nav').toggleClass('active2');
-      //  $('.overlaid').toggleClass('overlay-appear');
-        })
-    })
-    // Logo and Navbar change on scroll:	
-		$(window).scroll(function () {
-			if ($(document).scrollTop() > ($('nav').height())) {
-				$('nav').addClass('scrolled-nav');
-			} else {
-				$('nav').removeClass('scrolled-nav');
-			}
-		});
-  </script>
+    <script src="../js/general.js"></script>
 </body>
 </html>

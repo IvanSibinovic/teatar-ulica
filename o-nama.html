@@ -10,6 +10,7 @@
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <body>
+  <div class="overlaid"></div>
   <nav>
       <div id="shrinked" class="toggle"><a href='#'><img src='logo1.png' style="height: 50px;"></a><i class="fas fa-bars menu" aria-hidden="true"></i></div>
       <div id="logoWide">
@@ -176,7 +177,7 @@
     </div>
   </section>
 
-  <section id="members">
+  <section id="members" class="section">
     <h2>Članovi</h2>
     <div class="container">
       <a href="members-pages/stojoski.html"><div class="member-card">
@@ -273,7 +274,7 @@
     </div>
   </section>
 
-  <section id="blog" class="section-blog">
+  <section id="blog" class="section section-blog">
     <div class="container">
       <h2>Naše misli</h2>
         <div class="card-holder">
@@ -298,11 +299,25 @@
               <h5>- Sofija Đurić</h5>
             </div>
           </div></a>
+          <a href="creative-blog/dusan-tekst.html"><div class="small-card blg-crd">
+            <img class="small-card-img" src="img/creative/444.jpg">
+            <div class="small-card-txt">
+              <h4>Nostalgija</h4>
+              <h5>- Dušan Veselinović</h5>
+            </div>
+          </div></a>
+          <a href="creative-blog/irena-pesma.html"><div class="small-card blg-crd">
+            <img class="small-card-img" src="img/creative/555.jpg">
+            <div class="small-card-txt">
+              <h4>MC</h4>
+              <h5>- Irena Cvetić</h5>
+            </div>
+          </div></a>
         </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Kontakt</h2>
     <div class="container">
       <div class="contact-grid">
@@ -338,31 +353,8 @@
       <p>Website Design by <a href="https://www.peopleperhour.com/freelancer/development-it/ivan-sibiinovic-web-designer-front-end-developer-yjyqnqz">Ivan Sibinovic</a>. All Rights Reserved. Copyright 2019.</p>
     </div>
   </section>
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/slider-js.js"></script>
-  <script>
-    $('li.tags').on('click', function (e) {
-      window.location.href= $(this).children('a').attr("href");
-      return false;
-    });
-  
-    $(document).ready(function(){
-        $(".menu, .overlaid, .tags").click(function(){
-          $('ul').toggleClass('active1');
-          $('nav').toggleClass('active2');
-      //  $('.overlaid').toggleClass('overlay-appear');
-        })
-    })
-    
-    // Logo and Navbar change on scroll:	
-		$(window).scroll(function () {
-			if ($(document).scrollTop() > ($('nav').height())) {
-				$('nav').addClass('scrolled-nav');
-			} else {
-				$('nav').removeClass('scrolled-nav');
-			}
-		});
-  </script>
+    <script src="js/general.js"></script>
 </body>
 </html>
