@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Roboto';
   src:  url('fonts/Roboto-Regular.ttf');
+  src:  url('fonts/Roboto-Bold.ttf');
 }
 @font-face {
   font-family: 'Kaushan Script';
@@ -197,7 +198,6 @@ ul {
   align-items:center;
   color:#fff;
 }
-
 .container{
   max-width:1200px;
   padding-left:1rem;
@@ -420,6 +420,7 @@ a .card {
 }
 #gallery {
   background-color: #225470;
+  min-height: 50vh;
 }
 #gallery a {
   text-decoration: none;
@@ -601,6 +602,7 @@ a .card {
 @media(max-width:600px) {
   .bio-head .memb-pic {
     width: 90%;
+    height: auto;
   }
   .memb-pic-holder {
   	margin: 1rem auto;
@@ -636,10 +638,8 @@ a .card {
 	color: #ddd;
 }
 .contact-grid a {
-  color: #ddd;
-}
-.contact-grid a:hover {
-  color: #fff;
+  color: #398AD7;
+  text-decoration: none;
 }
 .contact-grid {
 	margin: 2rem 1rem;
@@ -668,7 +668,7 @@ a .card {
 	padding: 0 0.5rem;
 	transition: color 500ms ease-out;
 }
-.icon-holder i:hover, #bottom-line a:hover {
+.icon-holder i:hover, #bottom-line a:hover, .contact-grid a:hover {
 	color: #74D5DD;
 }
 #bottom-line {
@@ -806,6 +806,9 @@ a .card {
 }
 
 @media (max-width: 500px) {
+  .v-header {
+    height: 90vh;
+  }
   .slide .content {
     bottom: -300px;
     left: 0;
@@ -840,6 +843,22 @@ a .card {
 } 
 .slide:nth-child(6)  {
   background: url('img/slider/6.jpeg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(7)  {
+  background: url('img/slider/7.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(8)  {
+  background: url('img/slider/8.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(9)  {
+  background: url('img/slider/9.jpg') no-repeat
+    center center/cover;
+}
+.slide:nth-child(10)  {
+  background: url('img/slider/10.jpg') no-repeat
     center center/cover;
 }
 
