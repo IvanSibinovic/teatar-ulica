@@ -1181,11 +1181,11 @@ a .card {
   width: 25%;
   line-height: 0;
 }
-.art-side-img a img {
-  margin-top: 0.75rem;
+.art-side-img a {
+  padding-top: 0.75rem;
 }
-.art-side-img a .asi1 {
-  margin-top: 0;
+.art-side-img a:nth-of-type(1) {
+  padding-top: 0;
 }
 .section-rep {
   background-color: #225470;
@@ -1217,12 +1217,6 @@ a .card {
   }
   .art-side-img {
     width: 24%;
-  }
-  .artBlog {
-  width: 90%;
-  }
-  .imgBlog {
-    display: none;
   }
   .artcl {
     padding: 0;

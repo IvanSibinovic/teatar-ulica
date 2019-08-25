@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="../icon.ico" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" href="../style.css">
-<link rel="stylesheet" type="text/css" href="../css/lightbox.css">
+<link rel="stylesheet" type="text/css" href="../modal-style.css">
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
@@ -51,12 +51,12 @@
         </div>
       </div>
       <div class="art-side-img">
-        <a href="../img/repertoire/dtk2.jpg" data-lightbox="da-ti-kazem"><img src="../img/repertoire/dtk2.jpg" class="asi1" style="width: 100%;"></a>
-        <a href="../img/repertoire/dtk3.jpg" data-lightbox="da-ti-kazem"><img src="../img/repertoire/dtk3.jpg" style="width: 100%;"></a>
-        <a href="../img/repertoire/dtk4.jpg" data-lightbox="da-ti-kazem"><img src="../img/repertoire/dtk4.jpg" style="width: 100%;"></a>
-        <a href="../img/repertoire/dtk5.jpg" data-lightbox="da-ti-kazem"><img src="../img/repertoire/dtk5.jpg" style="width: 100%;"></a>
-        <a href="../img/repertoire/dtk6.jpg" data-lightbox="da-ti-kazem"><img src="../img/repertoire/dtk6.jpg" style="width: 100%;"></a>
-        <a href="../img/repertoire/dtk7.jpg" data-lightbox="da-ti-kazem"><img src="../img/repertoire/dtk7.jpg" style="width: 100%;"></a>
+        <img src="../img/repertoire/dtk2.jpg" style="width: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor modPic">
+        <img src="../img/repertoire/dtk3.jpg" style="width: 100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor modPic">
+        <img src="../img/repertoire/dtk4.jpg" style="width: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor modPic">
+        <img src="../img/repertoire/dtk5.jpg" style="width: 100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor modPic">
+        <img src="../img/repertoire/dtk6.jpg" style="width: 100%;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor modPic">
+        <img src="../img/repertoire/dtk7.jpg" style="width: 100%;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor modPic">
       </div>
     </div>
     <div class="container ending">
@@ -66,7 +66,70 @@
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-contnt">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="../img/repertoire/dtk2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="../img/repertoire/dtk3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="../img/repertoire/dtk4.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="../img/repertoire/dtk5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="../img/repertoire/dtk6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="../img/repertoire/dtk7.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-contnr">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../img/repertoire/dtk2.jpg" style="height: 40px;" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/repertoire/dtk3.jpg" style="height: 40px;" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/repertoire/dtk4.jpg" style="height: 40px;" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/repertoire/dtk5.jpg" style="height: 40px;" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/repertoire/dtk6.jpg" style="height: 40px;" onclick="currentSlide(5)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../img/repertoire/dtk7.jpg" style="height: 40px;" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+
+
+  <section id="contact">
   	<h2>Kontakt</h2>
     <div class="container">
     	<div class="contact-grid">
@@ -106,6 +169,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../js/general.js"></script>
-    <script src="../js/lightbox.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 </html>

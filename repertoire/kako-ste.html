@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="../icon.ico" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../css/lightbox.css">
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
@@ -52,7 +53,14 @@
           <p>U predstavi ,,Kako ste" Teatra Ulica se možda nalazi ključ.</p>
         </div>
       </div>
-      <div class="art-side-img"><img src="../img/repertoire/ks6.jpg" style="width: 100%;"></div>
+      <div class="art-side-img">
+        <a href="../img/repertoire/dtk2.jpg" data-lightbox="kako-ste"><img src="../img/repertoire/dtk2.jpg" class="asi1" style="width: 100%;"></a>
+        <a href="../img/repertoire/dtk3.jpg" data-lightbox="kako-ste"><img src="../img/repertoire/dtk3.jpg" style="width: 100%;"></a>
+        <a href="../img/repertoire/dtk4.jpg" data-lightbox="kako-ste"><img src="../img/repertoire/dtk4.jpg" style="width: 100%;"></a>
+        <a href="../img/repertoire/dtk5.jpg" data-lightbox="kako-ste"><img src="../img/repertoire/dtk5.jpg" style="width: 100%;"></a>
+        <a href="../img/repertoire/dtk6.jpg" data-lightbox="kako-ste"><img src="../img/repertoire/dtk6.jpg" style="width: 100%;"></a>
+        <a href="../img/repertoire/dtk7.jpg" data-lightbox="kako-ste"><img src="../img/repertoire/dtk7.jpg" style="width: 100%;"></a>
+      </div>
     </div>
     <div class="container ending">
         <p>Pročitajte o našim drugim predstavama:</p>
@@ -62,7 +70,7 @@
   </section>
 
 
-  <section id="contact">
+  <section id="contact" class="section">
   	<h2>Kontakt</h2>
     <div class="container">
     	<div class="contact-grid">
@@ -101,27 +109,7 @@
   </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script>
-    $('li.tags').on('click', function (e) {
-      window.location.href= $(this).children('a').attr("href");
-      return false;
-    });
-
-    $(document).ready(function(){
-        $(".menu, .overlaid, .tags").click(function(){
-          $('ul').toggleClass('active1');
-          $('nav').toggleClass('active2');
-      //  $('.overlaid').toggleClass('overlay-appear');
-        })
-    })
-    // Logo and Navbar change on scroll:	
-		$(window).scroll(function () {
-			if ($(document).scrollTop() > ($('nav').height())) {
-				$('nav').addClass('scrolled-nav');
-			} else {
-				$('nav').removeClass('scrolled-nav');
-			}
-		});
-  </script>
+    <script src="../js/general.js"></script>
+    <script src="../js/lightbox.js"></script>
 </body>
 </html>
