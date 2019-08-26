@@ -1068,6 +1068,7 @@ a .card {
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f10d";
 }
 #about-novak {
+  padding-top: 40px;
   background-color: #225470;
   color: #ddd;
   min-height: 50vh;
