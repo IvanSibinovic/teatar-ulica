@@ -319,6 +319,16 @@ section h2 {
   justify-content: space-around;
   margin-bottom: 1.5rem;
 }
+.card-holder i {
+  margin: 2rem 0;
+  font-size: 280px;
+  transition: all 500ms ease-in-out;
+}
+.card-holder i:hover {
+  cursor: pointer;
+  color: #fff;
+  transform: scale(1.2);
+}
 .big-card {
 	position: relative;
   background-color: #111;
@@ -426,6 +436,12 @@ a .card {
   text-decoration: none;
   letter-spacing: 2px;
   color: #ddd;
+}
+#gallery a p {
+  text-align: center;
+}
+.card-holder a {
+  text-align: center;
 }
 #gallery a:hover {
   text-decoration: underline;
@@ -1107,7 +1123,7 @@ a .card {
 }
 .pics .memb-pic {
   border: 2px solid #333;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 #gallery .memb-pic {
   border: 2px solid #ddd;
@@ -1357,6 +1373,9 @@ a .card {
   }
 }
 @media (max-width: 500px) {
+  .card-holder i {
+  font-size: 220px;
+  }
   .butt button#nex {
   right: 5px;
   }
