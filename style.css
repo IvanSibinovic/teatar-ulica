@@ -439,6 +439,7 @@ a .card {
 }
 #gallery a p {
   text-align: center;
+  margin: 0;
 }
 .card-holder a {
   text-align: center;
