@@ -21,3 +21,6 @@ $(window).scroll(function () {
     $('nav').removeClass('scrolled-nav');
     }
   });
+function goBack() {
+      window.history.back();
+    }

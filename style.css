@@ -294,6 +294,21 @@ section h2 {
   margin: 0 3%;
   border-bottom: 3px solid;
 }
+button.go-back {
+  background-color: transparent;
+  color: #ddd;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  border: none;
+  cursor: pointer;
+  transition: color 400ms ease-in-out;
+}
+button.go-back:hover {
+  color:#74D5DD;
+  text-decoration: underline;
+}
 .about-wrap {
   padding-top: 4rem;
   display: flex;
