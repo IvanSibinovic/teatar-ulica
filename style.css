@@ -459,6 +459,16 @@ a .card {
 .card-holder a {
   text-align: center;
 }
+#hot .card-holder a {
+  text-decoration: none;
+  color: #ddd;
+}
+.noimg {
+  display: normal;
+}
+.narrow {
+  width: 130px;
+}
 #gallery a:hover {
   text-decoration: underline;
   color: #fff;
@@ -879,7 +889,7 @@ a .card {
     center/cover;
 }
 .slide:nth-child(2) {
-  background: url('img/slider/2.jpg') no-repeat
+  background: url('img/slider/2.JPG') no-repeat
     center/cover;
 }
 .slide:nth-child(3) {
@@ -891,11 +901,11 @@ a .card {
     center/cover;
 }
 .slide:nth-child(5) {
-  background: url('img/slider/5.jpg') no-repeat
+  background: url('img/slider/5.JPG') no-repeat
     center top/cover;
 } 
 .slide:nth-child(6)  {
-  background: url('img/slider/6.jpg') no-repeat
+  background: url('img/slider/6.JPG') no-repeat
     center center/cover;
 }
 .slide:nth-child(7)  {
@@ -1261,10 +1271,30 @@ a .card {
   background: url(img/repertoire/ks4.jpg) no-repeat center top;
   background-size: cover;
 }
+.topimg-kaca {
+  height: 110vh;
+  background: url(img/hot/intervju-kaca/11.jpg) no-repeat center top;
+  background-size: cover;
+}
+.topimg-kaca div {
+  padding-top: 30vh;
+  padding-left: 5%;
+  font-family: 'Kaushan Script';
+  font-size: 1.25em;
+}
+.interview {
+  padding-top: 0;
+}
+.additional, .additional2 {
+  display: none;
+}
 .iconcredit {
   font-size: 0.7em;
 }
 @media (max-width: 768px) {
+  .additional {
+    display: inline-block;
+  }
   .md-vis {
     display: none;
   }
@@ -1294,6 +1324,14 @@ a .card {
   height: 60vh;
   background: url(img/repertoire/dtk-small.jpg) no-repeat center top;
   background-size: cover;
+  }
+  .topimg-kaca {
+  height: 70vh;
+  background: url(img/hot/intervju-kaca/1.jpg) no-repeat center top;
+  background-size: cover;
+  }
+  .topimg-kaca div {
+  display: none;
   }
 }
 /*  testemnials  */  
@@ -1371,6 +1409,17 @@ a .card {
   background-color: #fff;
   color: #333;
 }
+.special {
+  padding-left: 25px;
+  border-left: 3px solid #ddd;
+}
+.takeme {
+  text-decoration: none;
+  color: #ddd;
+}
+.takeme:hover {
+  text-decoration: underline;
+}
 @media (max-width: 850px) {
   .sldr {
   min-height: 30rem;
@@ -1389,6 +1438,9 @@ a .card {
   }
 }
 @media (max-width: 500px) {
+  .additional2 {
+  display: inline-block;
+}
   .card-holder i {
   font-size: 220px;
   }
