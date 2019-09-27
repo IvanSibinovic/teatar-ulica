@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 <head>
-	<title>teatar-ulica</title>
+	<title>Galerija</title>
 </head>
 <meta charset="utf-8">
+<meta name="description" content="Teatar Ulica je pozorišna trupa mladih i ambicioznih da koji žele ljudi da organizovanjem predstava i ostalih umetničkih aktivnosti doprinesu razvoju kulture u Srbiji">
+<meta name="keywords" content="teatarulica,pozorište,teatar,ulica,umetnost,teatarulica,kultura,predstava,film,uloga">
+<meta name="author" content="Ivan Sibinovic">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="icon.ico" type="image/x-icon"/>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="main-stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/gallery-style.css">
   <!-- My Stylesheet -->
 <link rel="stylesheet" href="animations/aos.css">
   <!-- Font Awesome -->
@@ -26,23 +30,38 @@
   	</nav>
 
     <div id="bottom-line" style="height: 44px;"></div>
-  <section id="gallery" class="pics section section-b">
-    <h2 data-aos="zoom-in">Galerija</h2>
-    <div class="card-holder">
-      <a href="gallery-pages/gallery-photo.html" data-aos="fade-down-right">
-        <p><i class="fas fa-images"></i></p>
-        <p>Galerija slika</p>
-      </a>
-      <a href="gallery-pages/gallery-video.html" data-aos="fade-up">
-        <p><i class="fas fa-film"></i></p>
-        <p>Video galerija</p>
-      </a>
+
+  <section id="galerija">
+    <h2>Galerija</h2>
+    <div class="decker">
+        <a href="gallery-pages/gallery-photo.html"><div id="mine" class="photointro">
+          <div class="imgBx">
+              <img src="img/photo-gallery-intro.jpg">
+          </div>
+          <div class="dtls">
+              <h2>Foto Galerija<br><span>Album</span></h2>
+          </div>
+        </div></a>
+        <a href="gallery-pages/gallery-video.html" style="line-height: 0;"><div class="videofolder">
+          <h2 id="mine2">Video Galerija</h2>     
+          <img src="img/video-gif.gif">
+          <img src="img/frame.png" class="frame">
+        </div></a>
     </div>
   </section>
 
     <div id="bottom-line">
       <button class="go-back" onclick="goBack()"><i class="fas fa-arrow-alt-circle-left"></i> Povratak na prethodnu stranu</button>
     </div>
+
+    <script>
+      window.onload = function(){
+         setInterval(function(){
+             document.getElementById("mine").classList.add("reaction");
+             document.getElementById("mine2").classList.add("appear");
+         }, 1000);
+      };
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/testemonials.js"></script>
