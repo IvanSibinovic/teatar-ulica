@@ -1,0 +1,17 @@
+#hot span.specAnounce {
+	left: 3%;
+	top: 40%;
+	transform: rotate(-25deg);
+	background-color: #f14f2d;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+#hot span.specAnounce2 {
+	left: 7%;
+	top: 55%;
+	transform: rotate(-25deg);
+	background-color: #f14f2d;
+	color: #fff;
+	font-size: 12px;
+}

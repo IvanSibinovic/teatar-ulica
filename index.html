@@ -1,6 +1,16 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" manifest="cache.manifest">
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149130420-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149130420-1');
+</script>
+<script type="text/javascript" src="js/update-cache.js"></script>
 	<title>Teatar Ulica</title>
 <script type='application/ld+json'>
 {
@@ -26,20 +36,23 @@
   "legalName": "Teatar Ulica"
 }
 </script>
-</head>
+<meta property="og:image" content="img/hot/premijera/1.jpg">
 <meta charset="utf-8">
 <meta name="description" content="Teatar Ulica je pozorišna trupa mladih i ambicioznih da koji žele ljudi da organizovanjem predstava i ostalih umetničkih aktivnosti doprinesu razvoju kulture u Srbiji">
 <meta name="keywords" content="teatarulica,pozorište,teatar,ulica,umetnost,teatarulica,kultura,predstava,film,uloga">
 <meta name="author" content="Ivan Sibinovic">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
 <link rel="icon" href="icon.ico" type="image/x-icon"/>
-<link rel="stylesheet" type="text/css" href="main-stylesheet.css">
+<link rel="stylesheet" type="text/css" href="main-stylesheet.css?v=1.2">
+<link rel="stylesheet" type="text/css" href="centar-stylesheet.css?v=1.2">
+<link rel="stylesheet" type="text/css" href="my-stylesheet1.css">
   <!-- My Stylesheet -->
 <link rel="stylesheet" href="css/aos.css">
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-<body>
+<body onload="checkForUpdate()">
 	<div class="overlaid"></div>
   	<nav>
 	    <div id="shrinked" class="toggle"><a href='#'><img src='logo1.png' style="height: 50px;"></a><i class="fas fa-bars menu" aria-hidden="true"></i></div>
@@ -85,49 +98,49 @@
     <div class="container">
       <div class="card-holder">
           <div class="small-card-holder">
-            <a href="hot/novi-progon.html">
-              <div class="small-card noimg" data-aos="zoom-in">
-                <span class="date">27. Sept</span>
-                <div>
-                  <h4 class="h4goSmall">Novi progon</h4>
-                  <p>Jučerašnja proba bila je prvi progon nove predstave. To je bio prvi put, od kako smo počeli sa pripremama ove predstave, da smo je odigrali od početka do kraja.</p>
-                  <p class="under-txt">Sabrali smo kolektivne utiske i novim idejama još više poboljšali našu igru.</p>
+            <a href="hot/potvrda.html">
+              <div class="small-card" data-aos="zoom-in">
+                <span class="date">04 Nov</span>
+                <img class="small-card-img" src="img/hot/potvrda/111.jpg" alt="Potvrda uplate u fond Budimo ljudi">
+                <div class="small-card-txt verticalCenter">
+                  <h4 class="goSmall">HVALA SVETE !!!</h4>
+                  <p>Naša Milica je danas uplatila sav novac prikupljen tokom humanitarne predstave.</p>
+                  <p class="under-txt">Još jednom se zahvaljujemo svima Vama koji ste pomogli našu akciju u skladu sa svojim mogućnostima.</p>
                 </div>
               </div>
             </a>
-            <a href="repertoire/u-centru-sveta.html">
+            <a href="hot/intervju-dusan.html">
               <div class="small-card" data-aos="zoom-in">
-                <span class="date">14. Okt</span>
-                <span class="location">Akademija 28</span>
-                <img class="small-card-img" src="img/repertoire/ucs.jpg">
-                <div class="small-card-txt">
-                  <h4 class="h4goSmall">U centru sveta</h4>
-                  <p>Jedno mesto, jedan povratak i jedna priča...</p>
-                  <p class="under-txt">Da li prošlost može da promeni budućnost?</p>
+                <span class="date">01 Nov</span>
+                <img class="small-card-img" src="img/members/dusan/111.jpg" alt="slika Dušana Veselinovića">
+                <div class="small-card-txt verticalCenter">
+                  <h4 class="goSmall">Intervju sa Dušanom</h4>
+                  <p>Ako nekoga zovu Duk(vojvoda) to dovoljno govori o tome kakav utisak ostavlja</p>
+                  <p class="under-txt">Dušan ima najviše iskustva pred kamerama pa bi ga mnogi od vas verovatno prepoznali i na ulici.</p>
+                </div>
+              </div>
+            </a>
+            <a href="hot/humanitarna.html">
+              <div class="small-card" data-aos="zoom-in">
+                <span class="date">01 Nov</span>
+                <img class="small-card-img" src="img/hot/humanitarna/111.jpg" alt="Članovi Teatra Ulica tokom izvođenja humanitarne predstave Kako ste">
+                <div class="small-card-txt verticalCenter">
+                  <h4 class="goSmall">Hvala Vam dobri ljudi</h4>
+                  <p>Inspirisani humanošću, nošeni energijom iz publike.</p>
+                  <p class="under-txt">Po rečima prisutnih, jedno od najboljih izvođenja Teatra Ulica</p>
                 </div>
               </div>
             </a>
           </div>
-          <a href="hot/intervju-novak.html">
+          <a href="hot/intervju-sofija.html">
             <div class="big-card" data-aos="fade-right">
-              <span class="date" data-aos="zoom-in" data-aos-delay="500">18. Sept</span>
-              <img class="card-img-top" src="img/hot/intervju-novak/1.jpg">
-              <h4>Intervju sa Novakom Puletićem</h4>
-              <p>Novak Puletić je momak koji je započeo ideju o Teatru Ulica, zato ponosno nosi zvanje Predsednika. Upoznajte „prvog čoveka” naše družine...</p>
+              <span class="date" data-aos="zoom-in" data-aos-delay="500">25. Okt</span>
+              <img class="card-img-top" src="img/members/sofija/12345.jpg" alt="Slika Sofije Djuric">
+              <h4>Sofija Đurić</h4>
+              <p>Glumica i jedan od osnivača Teatra Ulica. Izuzetan talenat za glumu u kombinaciji sa urođenim šarmom. Jedna jedina, naša Sofija.</p>
             </div>
           </a>
-          <div class="small-card-holder">
-            <a href="hot/bravo-irke.html">
-              <div class="small-card" data-aos="fade-up">
-                <span class="date">19. Sept</span>
-                <img class="small-card-img" src="img/hot/bravo-irke/1.jpg">
-                <div class="small-card-txt verticalCenter">
-                  <h4 class="goSmall">Naša draga Irena Cvetić je diplomirala na master studijama ETF-a...</h4>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+      </div>
       <p data-aos="flip-right"><a href="hot.html" class="takeme">Vidi sve aktuelnosti ...</a></p>
     </div>
   </section>

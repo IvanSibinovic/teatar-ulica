@@ -1,0 +1,8 @@
+.ti-nikola {
+  background: url(../img/hot/intervju-nikola/11.jpeg) no-repeat center top;
+}
+@media (max-width: 768px) {
+  .ti-nikola {
+  background: url(../img/hot/intervju-nikola/1.jpeg) no-repeat center top;
+}
+}

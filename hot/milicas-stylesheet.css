@@ -1,0 +1,11 @@
+.ti-milica {
+  background: url(../img/hot/intervju-milica/11.jpg) no-repeat center top;
+}
+.mica {
+  color: #000;
+}
+@media (max-width: 768px) {
+  .ti-milica {
+  background: url(../img/hot/intervju-milica/1.jpg) no-repeat center top;
+}
+}

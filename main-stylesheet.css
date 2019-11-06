@@ -1096,6 +1096,7 @@ line-height: 0;
 }
 .ending a {
   color: #fff;
+  font-style: italic;
 }
 .art-side-img {
   display: inline-block;
@@ -1134,11 +1135,17 @@ line-height: 0;
 .ti-novak {
   background: url(img/hot/intervju-novak/11.jpg) no-repeat center top;
 }
+.ti-milica {
+  background: url(img/hot/intervju-milica/11.jpg) no-repeat center top;
+}
 .topimg-kaca div {
   padding-top: 30vh;
   padding-left: 5%;
   font-family: 'Kaushan Script';
   font-size: 1.25em;
+}
+.mica {
+  color: #000;
 }
 .interview {
   padding-top: 0;
@@ -1161,6 +1168,9 @@ line-height: 0;
   }
   .under-txt {
     display: none;
+  }
+  .card-holder .h4goSmall {
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {
@@ -1207,6 +1217,9 @@ line-height: 0;
   .ti-novak {
   background: url(img/hot/intervju-novak/1.jpg) no-repeat center top;
   }
+.ti-milica {
+  background: url(img/hot/intervju-milica/1.jpg) no-repeat center top;
+}
   .topimg-kaca div {
   display: none;
   }
@@ -1324,8 +1337,5 @@ line-height: 0;
   }
   .butt button#pre {
     left: 5px;
-  }
-  .card-holder .h4goSmall {
-    font-size: 28px;
   }
 }

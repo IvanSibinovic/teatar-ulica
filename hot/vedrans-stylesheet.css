@@ -1,0 +1,8 @@
+.ti-vedran {
+  background: url(../img/hot/intervju-vedran/11.jpg) no-repeat center top;
+}
+@media (max-width: 768px) {
+  .ti-vedran {
+  background: url(../img/hot/intervju-vedran/1.jpg) no-repeat center top;
+}
+}
