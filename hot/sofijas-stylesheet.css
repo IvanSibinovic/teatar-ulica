@@ -1,0 +1,8 @@
+.ti-sofija {
+  background: url(../img/members/sofija/123.jpg) no-repeat center top;
+}
+@media (max-width: 768px) {
+  .ti-sofija {
+  background: url(../img/members/sofija/1234.jpg) no-repeat center top;
+}
+}

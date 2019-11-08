@@ -1,0 +1,8 @@
+.ti-dusan {
+  background: url(../img/members/dusan/11111.jpg) no-repeat center top;
+}
+@media (max-width: 500px) {
+  .ti-dusan {
+  background: url(../img/members/dusan/1111.jpg) no-repeat center top;
+}
+}

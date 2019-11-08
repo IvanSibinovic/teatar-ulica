@@ -1,0 +1,8 @@
+.ti-jelena {
+  background: url(../img/members/jelena/5.jpg) no-repeat center top;
+}
+@media (max-width: 500px) {
+  .ti-jelena {
+  background: url(../img/members/jelena/55.jpg) no-repeat center top;
+}
+}
