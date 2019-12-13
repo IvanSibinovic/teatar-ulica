@@ -1045,18 +1045,6 @@ line-height: 0;
 .blg-crd:hover h4 {
   text-decoration: underline;
 }
-@media (max-width: 565px) {
-  .blg-crd {
-  width: 300px;
-  }
-  .blg-crd .small-card-txt h4 {
-  font-size: 1.2rem;
-  }
-  .blg-crd .small-card-txt h5 {
-  font-size: 1rem;
-  text-align: right;
-  }
-}
 /*article pages*/
 .section-art {
   padding-top: 2.5rem;
@@ -1162,6 +1150,16 @@ line-height: 0;
   }
   .big-card {
     height: auto;
+  }
+  .blg-crd {
+  width: 300px;
+  }
+  .blg-crd .small-card-txt h4 {
+  font-size: 1.2rem;
+  }
+  .blg-crd .small-card-txt h5 {
+  font-size: 1rem;
+  text-align: right;
   }
   #hot .small-card .goSmall {
     font-size: 19px;

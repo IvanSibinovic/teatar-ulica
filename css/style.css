@@ -977,6 +977,19 @@ a .card {
   vertical-align: top;
   padding: 0;
 }
+
+.cardHolder {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+.myImg {
+  height: 400px;
+  width: 100%;
+  margin: 1rem;
+}
 @media (max-width: 850px) {
   .bio {
     padding-top: 5rem;

@@ -1,0 +1,25 @@
+.right {
+  font-family: 'Kaushan Script';
+	text-align: right;
+}
+h5.right {
+	margin-top: 2em;
+	padding-right: 4em;
+}
+@media (max-width: 768px) {
+	.topimg-kaca {
+    height: 50vh;
+	} 
+}
+.ti-puding {
+  background: url(../img/hot/puding/1.jpg) no-repeat center top;
+}
+@media (max-width: 800px) {
+  .ti-puding {
+  background: url(../img/hot/puding/11.jpg) no-repeat center top;
+}
+@media (max-width: 500px) {
+  .ti-puding {
+  background: url(../img/hot/puding/111.jpg) no-repeat center top;
+}
+}

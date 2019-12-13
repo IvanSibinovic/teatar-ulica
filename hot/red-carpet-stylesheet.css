@@ -1,0 +1,52 @@
+.spcart {
+	font-family: 'Libre Caslon Text', serif;
+	display: inline-block;
+    margin: 2%;
+    padding: 5%;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.25rem;
+    text-align: left;
+}
+.art-img {
+	display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    line-height: 0; 
+}
+.art-img img {
+	margin-top: 0.75rem;
+}
+.rc {
+	height: 110vh;
+	background-size: cover;
+}
+.ti-red-carpet {
+  background: url(../img/hot/red-carpet/0.jpg) no-repeat center top;
+  height: 150vh;
+  background-size: cover;
+}
+@media (max-width: 850px) {
+	.ti-red-carpet {
+  background: url(../img/hot/red-carpet/0.jpg) no-repeat center top;
+  height: 90vh; 
+  background-size: cover;
+}
+}
+@media (max-width: 500px) {
+  .ti-red-carpet {
+  background: url(../img/hot/red-carpet/0.jpg) no-repeat center top;
+  height: 60vh;
+  background-size: cover;
+}
+@media (max-width: 400px) {
+	.spcart {
+    font-size: 1.15rem;
+}
+  .ti-red-carpet {
+  background: url(../img/hot/red-carpet/0.jpg) no-repeat center top;
+  height: 35vh;
+  background-size: cover;
+}
+}

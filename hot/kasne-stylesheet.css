@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+	.topimg-kaca {
+    height: 50vh;
+	} 
+}
+.ti-kasne {
+  background: url(../img/hot/kasne-noci/1.jpg) no-repeat center bottom;
+}
+@media (max-width: 800px) {
+  .ti-kasne {
+  background: url(../img/hot/kasne-noci/11.jpg) no-repeat center bottom;
+}
+@media (max-width: 500px) {
+  .ti-kasne {
+  background: url(../img/hot/kasne-noci/111.jpg) no-repeat center bottom;
+}
+}
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

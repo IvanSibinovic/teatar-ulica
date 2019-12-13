@@ -1,0 +1,12 @@
+.ti-marijana {
+  background: url(../img/members/marijana/5.jpg) no-repeat center top;
+}.ti-marijana2 {
+  background: url(../img/members/marijana/6.jpg) no-repeat center top;
+}
+@media (max-width: 500px) {
+  .ti-marijana {
+  background: url(../img/members/marijana/55.jpg) no-repeat center top;
+}.ti-marijana2 {
+  background: url(../img/members/marijana/66.jpg) no-repeat center top;
+}
+}

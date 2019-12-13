@@ -1,0 +1,17 @@
+.art-top {
+	height: 100vh; 
+	text-align: center;
+}
+.art-top-img {
+	height: 100%;
+	width: auto;
+}
+@media (max-width: 500px) {
+	.art-top-img {
+		width: 100%;
+		height: auto;
+}
+  .art-top {
+	height: 30vh;
+}
+}
