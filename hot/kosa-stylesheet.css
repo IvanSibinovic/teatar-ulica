@@ -1,0 +1,29 @@
+/*.ti-kosa {
+  background: url(../img/hot/kosa/1.jpg) no-repeat center top;
+  height: 80vh;
+}
+@media (max-width: 900px) {
+	.ti-kosa {
+  background: url(../img/hot/kosa/11.jpg) no-repeat center top;
+  height: 50vh;
+}
+}
+@media (max-width: 500px) {
+  .ti-kosa {
+  background: url(../img/hot/kosa/111.jpg) no-repeat right top;
+  height: 40vh;
+}
+} */
+.art-top {
+	text-align: center;
+}
+.art-top-img {
+		width: 80%;
+		height: auto;
+}
+@media (max-width: 750px) {
+	.art-top-img {
+		width: 100%;
+		height: auto;
+}
+}
